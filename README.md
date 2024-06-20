@@ -18,6 +18,7 @@ Gemstone is a small 3D graphics engine that can render basic 3D shapes like cube
   - [Rotate objects](#rotate-objects)
   - [Scale objects](#scale-objects)
   - [Change the drawing mode of an object (wireframe)](#change-the-drawing-mode-of-an-object-wireframe)
+  - [Collision Detection](#collision-detection)
   - [Moving and rotating camera](#moving-and-rotating-camera)
   - [Changing the position and the rotation of the lighting](#changing-the-position-and-the-rotation-of-the-lighting)
   - [Changing the projection mode](#changing-the-projection-mode)
@@ -190,6 +191,13 @@ sphere.scale = new Vector(x, y, z);
 ### Change the drawing mode of an object (wireframe)
 
 You can draw objects as solids or wireframes. To do that you can use `box.wireframe = true;`.
+
+### Collision detection
+
+Engine also supports basic collision detection using `collidesWith` function. Usage: 
+```javascript
+box.collidesWith(sphere); // returns boolean
+```
 
 ### Moving and rotating camera
 
