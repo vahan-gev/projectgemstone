@@ -1,4 +1,4 @@
- const VERTEX_SHADER = `
+const VERTEX_SHADER = `
   #ifdef GL_ES
   precision highp float;
   #endif
